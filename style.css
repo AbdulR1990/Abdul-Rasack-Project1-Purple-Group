@@ -1,0 +1,257 @@
+.welcome {
+    background-image: url('photos/BattleScreen1.jpg');
+    background-size:cover;
+}
+
+.mainTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 75px;
+}
+
+.user {
+    padding: 175px;
+}
+
+.enterButton {
+    background-color: red;
+    padding: .75rem 1.25rem;
+    color: white;
+    font-style: bold;
+    border-radius: 10rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.enterButton a {
+    color: white;
+    text-decoration: none;
+}
+
+.categories {
+    background-image: url('photos/CategorySelector.jpg');
+    background-size:cover;
+}
+
+.category {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 50px;
+}
+
+.buttons {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.pick {
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    background-color: green;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.pick a {
+    color: white;
+    text-decoration: none;
+}
+
+.score {
+    font-size: 55px;
+    position: absolute; bottom: 0px;
+}
+
+.sciquestion {
+    display: flex;
+    justify-content: center;
+}
+
+.sciquestions {
+    font: 50px;
+    color: red;
+    padding: 100px;
+}
+
+.scianswer {
+    display: flex;
+    justify-content: center;
+    padding: 150px;
+}
+
+.histquestion {
+    display: flex;
+    justify-content: center;
+}
+
+.histanswer {
+    display: flex;
+    justify-content: center;
+}
+
+.geoquestion {
+    display: flex;
+    justify-content: center;
+}
+
+.geoanswer {
+    display: flex;
+    justify-content: center;
+}
+
+.litquestion {
+    display: flex;
+    justify-content: center;
+}
+
+.litanswer {
+    display: flex;
+    justify-content: center;
+}
+
+.answers {
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    background-color: purple;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.question1 {
+    background-image: url('photos/PlayAgainScreen1.jpg');
+    background-size:cover;
+}
+
+.question2 {
+    background-image: url('photos/BattleScreen2.jpg');
+    background-size:cover;
+}
+
+.question3 {
+    background-image: url('photos/PlayAgainScreen1.jpg');
+    background-size:cover;
+}
+
+.question4 {
+    background-image: url('photos/PlayAgainScreen1.jpg');
+    background-size:cover;
+}
+
+.endpage1 {
+    background-image: url('photos/VictoryScreen3.jpg');
+    background-size:cover;
+}
+
+.endpage2 {
+    background-image: url('photos/LossScreen1.jpg');
+    background-size:cover;
+}
+
+.endpage3 {
+    background-image: url('photos/VictoryScreen2.jpg');
+    background-size:cover;
+}
+
+.victory {
+    display: flex;
+    justify-content: center;
+}
+
+.victorious {
+    font-size: 50px;
+}
+
+.continueButton {
+    padding: 175px;
+    display: flex;
+    justify-content: center;
+}
+
+.continue {
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    background-color: green;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.continue a {
+    color: white;
+    text-decoration: none;
+}
+
+.defeat {
+    display: flex;
+    justify-content: center;
+}
+
+.defeatText {
+    font-size: 50px;
+}
+
+.resetButton {
+    padding: 175px;
+    display: flex;
+    justify-content: center;
+}
+
+.applause {
+    display: flex;
+    justify-content: center;
+}
+
+.encore {
+    font-size: 50px;
+}
+
+.reset1 {
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    background-color: red;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.reset1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.reset {
+    background-image: url('photos/PlayAgainScreen3.jpg');
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+}

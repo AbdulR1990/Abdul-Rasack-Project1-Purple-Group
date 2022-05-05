@@ -11,6 +11,9 @@ let geoAnswers = [['Egypt & South Africa', 'Ghana & Nigeria', 'Nigeria & Ethiopi
 ['Trinidad & Tobago, Guyana & Jamaica', 'Cuba, Haiti & Jamaica', 
 'Antigua & Barbuda, Anguila & Samoa', 'Puerto Rico, Cuba & Costa Rica']];
 
+corrAnswers3 = ['Nigeria & Ethiopia', 'Naypyidaw', 'Fiji, Solomon Islands & Marshall Islands', 
+'La Paz', 'Cuba, Haiti & Jamaica'];
+
 let i = 0;
 let j = 0;
 

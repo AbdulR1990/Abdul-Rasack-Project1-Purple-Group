@@ -9,6 +9,8 @@ let histAnswers = [['1914 - 1918', '1812 - 1815', '1861 - 1865', '1834 - 1839'],
 ['13th Century', '14th Century', '8th Century', '12th Century'], 
 ['Sojourner Truth', 'Daisy Bates', 'Bessie Smith', 'Rebecca Lee Crumpler']];
 
+let corrAnswers2 = [];
+
 let i = 0;
 let j = 0;
 

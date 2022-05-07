@@ -12,7 +12,7 @@ let litAnswers = [['Fyodor Dostoevsky', 'Aleksandr Solzhenitsyn',
 ['The Annals of Ramsses II', 'The Epic of Gilgamesh', 'Beowulf', 
 'The Lament for Ur']];
 
-let corrAnswers4 = ['Aleksandr Solzhenitsyn', 'Don Quixote', 'Mystery', 
+let corrAnswers4 = ['Aleksandr Solzhenitsyn', 'Don Quixote', 'Mystery', 'Ernest Hemingway', 
 'The Epic of Gilgamesh'];
 
 let i = 0;

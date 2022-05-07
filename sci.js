@@ -9,7 +9,7 @@ let sciAnswers = [['1', '5', '4', '7'], ['Becquerels', 'Teslas', 'Daltons', 'Wav
 'The entropy of a system approaches a constant value as the temperature approaches absolute zero', 
 'An object in motion will stay in motion unless acted upon by an outside force']];
 
-corrAnswers1 = ['4', 'Becquerels', 'Uranus', '-log[H+]', 
+let corrAnswers1 = ['4', 'Becquerels', 'Uranus', '-log[H+]', 
 'Energy can niether be created nor destroyed, only transferred'];
 
 let i = 0;
@@ -19,42 +19,49 @@ let score = 0;
 document.getElementById('score').innerHTML = `Your Score: ${score}`;
 
 function displayQandA(e){
-    
-    if (i >= 4 && score >= 80){
-        document.getElementById('sciquestions').innerHTML = 'Battle Over!';
-        let battleOver = document.createElement('a');
-        battleOver.setAttribute('href', 'endpage1.html');
-        battleOver.textContent = 'Go to End Page'
-        document.body.append(battleOver);
-    } else if (i >= 4 && score < 80){
-        document.getElementById('sciquestions').innerHTML = 'Battle Over!';
-        let battleOver = document.createElement('a');
-        battleOver.setAttribute('href', 'endpage2.html');
+    if (e){
+        console.log(e.target);
+        checkAnswer(e);
+    }
+    if(i < 5){
+        j = 0;
+        document.getElementById('sciquestions').innerHTML = sciQuestions[i];
+        document.getElementById('scians1').innerHTML = sciAnswers[i][j];
+        j++;
+        document.getElementById('scians2').innerHTML = sciAnswers[i][j];
+        j++;
+        document.getElementById('scians3').innerHTML = sciAnswers[i][j];
+        j++;
+        document.getElementById('scians4').innerHTML = sciAnswers[i][j];
     } else {
-        if (e){
-            checkAnswer(e);
-        }
-    j = 0;
-    document.getElementById('sciquestions').innerHTML = sciQuestions[i];
-
-    document.getElementById('scians1').innerHTML = sciAnswers[i][j];
-    j++;
-    document.getElementById('scians2').innerHTML = sciAnswers[i][j];
-    j++;
-    document.getElementById('scians3').innerHTML = sciAnswers[i][j];
-    j++;
-    document.getElementById('scians4').innerHTML = sciAnswers[i][j];
+        document.getElementById('scians1').style.display = 'none';
+        document.getElementById('scians2').style.display = 'none';
+        document.getElementById('scians3').style.display = 'none';
+        document.getElementById('scians4').style.display = 'none';
+    }
     i++;
-    } 
 };
 
 displayQandA();
 
 function checkAnswer(e){
-    if(e.target.textContent == corrAnswers1[i - 1]){
+    if (e.target.textContent === corrAnswers1[i - 1]){
         score += 20;
         document.getElementById('score').innerHTML = `Your Score: ${score}`;
-    };
+    }
+    if (score >= 100){
+        document.getElementById('sciquestions').innerHTML = 'Battle Over!';
+        let battleOver = document.createElement('a');
+        battleOver.setAttribute('href', 'endpage1.html');
+        battleOver.innerText = 'Proceed to the Finish!'
+        document.getElementById('container').appendChild(battleOver);
+    } else if (i >= 5 && score < 100){
+        document.getElementById('sciquestions').innerHTML = 'Battle Over!';
+        let battleOver = document.createElement('a');
+        battleOver.setAttribute('href', 'endpage2.html');
+        battleOver.innerText = 'Proceed to the Finish!'
+        document.getElementById('container').appendChild(battleOver);
+    }
 }
 
 let proceed = document.querySelector('.scianswer');
